@@ -26,7 +26,7 @@
           <span class="name">Uxpanapa</span>
           
         </a>
-        <a class="location" href="/ubicaciones/santa-maria-chimalpa" style="top: 58%;left: 10%;animation-delay: 0.6s;">
+        <a class="location" href="/ubicaciones/santa-maria-chimalapa" style="top: 58%;left: 10%;animation-delay: 0.6s;">
           <span class="name">Santa María Chimalpa</span>
           <div class="line" style="width:260px;"></div>
           <span class="dot"></span>
