@@ -18,7 +18,7 @@
       </div>
     </div>
     <nav class="relative z-10 flex flex-wrap items-center justify-between border-t border-white border-opacity-25 lg:flex-no-wrap">
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="#">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/documental">
         Documental
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>
@@ -30,7 +30,7 @@
         Entrevistas
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </nuxt-link>
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="#">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/metodologia">
         Metodología
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>

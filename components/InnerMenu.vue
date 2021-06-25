@@ -16,11 +16,11 @@
       </div>
       <div class="grid h-full grid-rows-3 text-4xl lg:grid-cols-2">
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/">Inicio</a>
-        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="#">Documental</a>
+        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/documental">Documental</a>
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/mapa">Mapa</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/entrevistas">Entrevistas</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="#">Metodología</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/conclusiones">Conclusiones</a>
+        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/metodologia">Metodología</a>
+        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/conclusiones">Lecciones</a>
       </div>
     </div>
   </header>
