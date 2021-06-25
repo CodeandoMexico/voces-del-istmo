@@ -14,13 +14,15 @@
         <h2 class="text-sm font-bold tracking-wider uppercase text-secondary">Menu</h2>
         <button class="text-sm font-bold tracking-wider uppercase outline-none text-secondary" @click="isActive = !isActive">Cerrar</button>
       </div>
-      <div class="grid h-full grid-rows-3 text-4xl lg:grid-cols-2">
+      <div class="grid h-full grid-rows-5 text-4xl lg:grid-cols-2">
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/">Inicio</a>
+        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/into">Introducción</a>
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/documental">Documental</a>
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/mapa">Mapa</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/entrevistas">Entrevistas</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/metodologia">Metodología</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/conclusiones">Lecciones</a>
+        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/acerca">Acerca de</a>
       </div>
     </div>
   </header>
