@@ -35,17 +35,15 @@
           </header>
           <div class="flex items-stretch justify-between">
             <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary" style="animation-delay: 1s">
-              <h4 class="tracking-wider uppercase">Resumen</h4>
+              <!-- <h4 class="tracking-wider uppercase">Resumen</h4> -->
               <div v-html="location.intro">
               </div>
             </article>
             <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
-              <h3 class="mb-2 font-bold tracking-wider uppercase">Videos</h3>
+              <h3 class="mb-2 font-bold tracking-wider uppercase">Reporte</h3>
               <div v-for="(video, index) in location.videos" :key="index" class="mb-2">
-                <a class="relative inline-block w-64 mb-2 transition-all duration-75 ease-in transform bg-black rounded-lg pb-1/3 hover:shadow-2xl hover:scale-110" href="#">
-                  <iframe width="100%" height="100%" class="absolute inset-0 object-cover" :src="video.url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </a>
-                <small class="block w-full lg:w-2/3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam neque cum sed aut error ipsum commodi qui tempore.</small>
+                <small class="block w-full lg:w-2/3">Para conocer más, descarga el reporte completo:</small>
+                <button>Descargar</button>
               </div>
             </aside>
           </div>
@@ -56,7 +54,7 @@
         <div class="slide" v-for="(interview, index) in location.interviews" :key="index">
           <div class="flex items-center justify-center h-screen">
             <div class="text-center text-primary">
-              <h3 class="mb-5 text-sm font-bold tracking-wider uppercase">entrevista</h3>
+              <h3 class="mb-5 text-sm font-bold tracking-wider uppercase">voces</h3>
               <div class="mx-auto mb-5 prose text-primary" v-html="interview.text">
               </div>
               <div class="w-10 h-1 mx-auto my-5 bg-primary"></div>

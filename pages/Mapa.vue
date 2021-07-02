@@ -4,7 +4,7 @@
 
     <div class="text-center">
       <h1 class="text-2xl italic text-white font-display">Mapa</h1>
-      <p class="text-white opacity-75">Elige uno de los puntos de consulta para aprender más:</p>
+      <p class="text-white opacity-75">Elige uno de los puntos de consulta para conocer más:</p>
     </div>
 
     <div class="relative flex items-center justify-center transform scale-50 lg:scale-100" style="width: 1000px;height: 600;">
