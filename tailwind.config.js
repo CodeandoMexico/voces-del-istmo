@@ -1,13 +1,14 @@
 module.exports = {
-  variants: {
-    extend: {
-      backgroundColor: ['group-hover'],
-      borderColor: ['group-hover'],
-      textColor: ['group-hover'],
-      transform: ['group-hover'],
-      opacity: ['group-hover']
-    }
+  purge: {
+    content: [
+      'components/**/*.{vue,js}',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.{js,ts}',
+      'nuxt.config.{js,ts}'
+    ]
   },
+  darkMode: false,
   theme: {
     extend: {
       inset: {
@@ -50,6 +51,15 @@ module.exports = {
         'display': ['Inria Serif', 'sans-serif'],
         'body' : ['Avenir', 'sans-serif']
       }
+    }
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['group-hover'],
+      borderColor: ['group-hover'],
+      textColor: ['group-hover'],
+      transform: ['group-hover'],
+      opacity: ['group-hover']
     }
   },
   plugins: [

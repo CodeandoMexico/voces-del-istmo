@@ -15,7 +15,7 @@
           <div class="line" style="width: 70px"></div>
           <span class="dot"></span>
         </a>
-        <a class="location" href="/ubicaciones/jaltepec-de-candoyac" style="top: 47%;left:15%; animation-delay: 0.2s;">
+        <a class="location" href="/ubicaciones/jaltepec-de-candeyoc" style="top: 47%;left:15%; animation-delay: 0.2s;">
           <span class="name">Jaltepec de Candayoc</span>
           <div class="line" style="width: 110px;"></div>
           <span class="dot"></span>
