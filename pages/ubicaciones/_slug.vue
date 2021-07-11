@@ -2,132 +2,143 @@
   <section class="location">
     <InnerMenu :header="header" />
     <prev-next :prev="prev" :next="next" />
-    <full-page ref="fullpage" :options="options" id="fullpage">
-
-      <section class="section" data-header="is-dark">
-        <div class="flex items-center justify-between h-screen bg-cover bg-primary"  :style="{ backgroundImage: `url(${bgImage})` }">
-          <div class="w-1/2 p-10 text-center">
-            <span class="text-6xl font-bold text-white fadeUp" style="animation-delay:0.5s;">{{ location._id }}</span>
-            <h2 class="text-4xl italic text-secondary font-display fadeUp" style="animation-delay: 0.8s;">{{ location.name }}</h2>
-            <h3 class="mb-3 text-2xl text-white font-display fadeIn" style="animation-delay:1s;">{{ location.state }}</h3>
-            <p class="text-xl text-white fadeIn" style="animation-delay: 1.2s;">{{ location.description }}</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" data-header="is-light">
-        <div class="flex flex-col justify-center h-screen p-10">
-          <header class="mb-10">
-            <h3 class="inline-block p-1 text-sm font-bold tracking-wider uppercase text-primary font-body fadeUp">{{ location.state }}</h3>
-            <h1 class="text-4xl font-bold leading-none text-primary font-display">
-              <AnimatedTitle :text=" location.name " />
-            </h1>
-            <div class="flex items-center py-2 -mx-4 text-primary">
-              <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.2s;">
-                <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                {{ location.location }}
+    <client-only>
+      <full-page id="fullpage" ref="fullpage" :options="options">
+        <section class="section" data-header="is-dark">
+          <div class="flex items-center justify-between h-screen bg-cover bg-primary" :style="{ backgroundImage: `url(${bgImage})` }">
+            <div class="w-1/2 p-10 text-center">
+              <span class="text-6xl font-bold text-white fadeUp" style="animation-delay:0.5s;">{{ location._id }}</span>
+              <h2 class="text-4xl italic text-secondary font-display fadeUp" style="animation-delay: 0.8s;">
+                {{ location.name }}
+              </h2>
+              <h3 class="mb-3 text-2xl text-white font-display fadeIn" style="animation-delay:1s;">
+                {{ location.state }}
               </h3>
-              <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.4s;">
-                <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                {{ location.date }}
-              </h3>
-            </div>
-          </header>
-          <div class="flex items-stretch justify-between">
-            <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary" style="animation-delay: 1s">
-              <!-- <h4 class="tracking-wider uppercase">Resumen</h4> -->
-              <div v-html="location.intro">
-              </div>
-            </article>
-            <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
-              <h3 class="mb-2 font-bold tracking-wider uppercase">Reporte</h3>
-              <div v-for="(video, index) in location.videos" :key="index" class="mb-2">
-                <small class="block w-full lg:w-2/3">Para conocer más, descarga el reporte completo:</small>
-                <button>Descargar</button>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-center bg-cover section bg-secondary" data-header="is-light" :style="{'background-image': `url(${require('@/assets/img/bg-entrevista.svg')})`}">
-        <div class="slide" v-for="(interview, index) in location.interviews" :key="index">
-          <div class="flex items-center justify-center h-screen">
-            <div class="text-center text-primary">
-              <h3 class="mb-5 text-sm font-bold tracking-wider uppercase">voces</h3>
-              <div class="mx-auto mb-5 prose text-primary" v-html="interview.text">
-              </div>
-              <div class="w-10 h-1 mx-auto my-5 bg-primary"></div>
-              <h4 class="text-xl font-bold font-display">{{ interview.name }}</h4>
-              <h5 class="text-sm tracking-wider uppercase">{{ interview.position }}</h5>
-              <h5 class="text-sm tracking-wider uppercase">{{ interview.age }}</h5>
+              <p class="text-xl text-white fadeIn" style="animation-delay: 1.2s;">
+                {{ location.description }}
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- <section class="section" style="display: none;">
-        <div></div>
-      </section> -->
-
-    </full-page>
+        </section>
+        <section class="section" data-header="is-light">
+          <div class="flex flex-col justify-center h-screen p-10">
+            <header class="mb-10">
+              <h3 class="inline-block p-1 text-sm font-bold tracking-wider uppercase text-primary font-body fadeUp">
+                {{ location.state }}
+              </h3>
+              <h1 class="text-4xl font-bold leading-none text-primary font-display">
+                <AnimatedTitle :text=" location.name " />
+              </h1>
+              <div class="flex items-center py-2 -mx-4 text-primary">
+                <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.2s;">
+                  <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  {{ location.location }}
+                </h3>
+                <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.4s;">
+                  <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                  {{ location.date }}
+                </h3>
+              </div>
+            </header>
+            <div class="flex items-stretch justify-between">
+              <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary" style="animation-delay: 1s">
+                <!-- <h4 class="tracking-wider uppercase">Resumen</h4> -->
+                <div v-html="location.intro" />
+              </article>
+              <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
+                <h3 class="mb-2 font-bold tracking-wider uppercase">
+                  Reporte
+                </h3>
+                <div v-for="(video, index) in location.videos" :key="index" class="mb-2">
+                  <small class="block w-full lg:w-2/3">Para conocer más, descarga el reporte completo:</small>
+                  <button>Descargar</button>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+        <section class="bg-center bg-cover section bg-secondary" data-header="is-light" :style="{'background-image': `url(${require('@/assets/img/bg-entrevista.svg')})`}">
+          <div v-for="(interview, index) in location.interviews" :key="index" class="slide">
+            <div class="flex items-center justify-center h-screen">
+              <div class="text-center text-primary">
+                <h3 class="mb-5 text-sm font-bold tracking-wider uppercase">
+                  voces
+                </h3>
+                <div class="mx-auto mb-5 prose text-primary" v-html="interview.text" />
+                <div class="w-10 h-1 mx-auto my-5 bg-primary" />
+                <h4 class="text-xl font-bold font-display">
+                  {{ interview.name }}
+                </h4>
+                <h5 class="text-sm tracking-wider uppercase">
+                  {{ interview.position }}
+                </h5>
+                <h5 class="text-sm tracking-wider uppercase">
+                  {{ interview.age }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="section" style="display: none;">
+          <div></div>
+        </section> -->
+      </full-page>
+    </client-only>
   </section>
 </template>
 
 <script>
-  import AnimatedTitle from '@/components/AnimatedTitle.vue'
-  import InnerMenu from '@/components/InnerMenu.vue'
-  import PrevNext from '@/components/PrevNext.vue'
+import AnimatedTitle from '@/components/AnimatedTitle.vue'
+import InnerMenu from '@/components/InnerMenu.vue'
+import PrevNext from '@/components/PrevNext.vue'
 
-  export default {
-    async asyncData({ $content, params, error }) {
-      const location = await $content('locations', params.slug).fetch()
-      const [prev, next] = await $content('locations').only(['name', 'slug']).sortBy('createdAt', 'asc').surround(params.slug).fetch()
+export default {
+  components: {
+    AnimatedTitle,
+    InnerMenu,
+    PrevNext
+  },
+  async asyncData ({ $content, params, error }) {
+    const location = await $content('locations', params.slug).fetch()
+    const [prev, next] = await $content('locations').only(['name', 'slug']).sortBy('createdAt', 'asc').surround(params.slug).fetch()
 
-      return {
-        location,
-        prev,
-        next
-      }
-    },
-    data() {
-      return {
-        header: 'is-dark',
-        slideIndex2 : 1,
-        sliding : false,
-        options: {
-          licenseKey: '7DB77ED0-EBD64675-AC303CF4-323D7786',
-          onLeave: this.onLeave,
-          afterLoad: this.afterLoad
-        }
-      }
-    },
-    computed: {
-      bgImage() {
-        return require('~/assets/img/' + this.location.image)
-      }
-    },
-    components: {
-      AnimatedTitle,
-      InnerMenu,
-      PrevNext
-    },
-    methods: {
-      componentsReady() {
-        this.$refs.fullpage.init()
-      },
-      onLeave(index,nextIndex, direction) {
-        var current = nextIndex.item
-        this.header = current.dataset.header;
-
-  
-
-        // if(nextIndex.isLast){
-        //   window.location.href = this.next.slug;
-        // }
+    return {
+      location,
+      prev,
+      next
+    }
+  },
+  data () {
+    return {
+      header: 'is-dark',
+      slideIndex2: 1,
+      sliding: false,
+      options: {
+        licenseKey: '7DB77ED0-EBD64675-AC303CF4-323D7786',
+        onLeave: this.onLeave,
+        afterLoad: this.afterLoad
       }
     }
+  },
+  computed: {
+    bgImage () {
+      return require('~/assets/img/' + this.location.image)
+    }
+  },
+  methods: {
+    componentsReady () {
+      this.$refs.fullpage.init()
+    },
+    onLeave (index, nextIndex, direction) {
+      const current = nextIndex.item
+      this.header = current.dataset.header
+
+      // if(nextIndex.isLast){
+      //   window.location.href = this.next.slug;
+      // }
+    }
   }
+}
 </script>
 
 <style>
@@ -175,7 +186,7 @@
   .fadeUp, .fadeIn {
     opacity: 0;
   }
-  
+
   .active .fadeUp {
     animation: fadeUp 0.5s forwards cubic-bezier(0.25, 1, 0.5, 1);
     opacity: 0;

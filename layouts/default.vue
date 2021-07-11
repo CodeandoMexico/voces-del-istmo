@@ -29,8 +29,8 @@
   @keyframes noise {
     0% { transform: translate3d(0, 9rem, 0); }
     10% { transform: translate3d(-1rem, -4rem, 0)}
-    20% { transform:translate3d(-8rem, 2rem, 0) } 
-    30%{ transform:translate3d(9rem, -9rem, 0) } 
+    20% { transform:translate3d(-8rem, 2rem, 0) }
+    30%{ transform:translate3d(9rem, -9rem, 0) }
     40%{ transform:translate3d(-2rem, 7rem, 0)}
     50%{ transform:translate3d(-9rem, -4rem, 0)}
     60%{transform:translate3d(2rem, 6rem, 0)}
@@ -48,5 +48,5 @@
   .fade-enter, .fade-leave-to  {
     opacity: 0;
   }
-  
+
 </style>

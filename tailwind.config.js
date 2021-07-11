@@ -40,16 +40,16 @@ module.exports = {
         '8/12': '66.666667%',
         '9/12': '75%',
         '10/12': '83.333333%',
-        '11/12': '91.666667%',
+        '11/12': '91.666667%'
       },
       colors: {
-        'primary' : '#26534E',
-        'secondary': '#F6D8C7',
-        'bg-opacity' : 'rgba(0,0,0,0.5)'
+        primary: '#26534E',
+        secondary: '#F6D8C7',
+        'bg-opacity': 'rgba(0,0,0,0.5)'
       },
       fontFamily: {
-        'display': ['Inria Serif', 'sans-serif'],
-        'body' : ['Avenir', 'sans-serif']
+        display: ['Inria Serif', 'sans-serif'],
+        body: ['Avenir', 'sans-serif']
       }
     }
   },
@@ -63,6 +63,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ]
 }
