@@ -1,32 +1,16 @@
 <template>
-  <section class="h-screen bg-black">
+  <section class="h-screen overflow-y-auto bg-black">
     <InnerMenu header="is-dark" />
-    <div class="grid h-full grid-cols-5 grid-rows-3 videos">
-      <div v-for="(index) in 15" :key="index" class="relative flex items-center justify-center w-full h-full border-b border-r border-white border-opacity-25 fadeIn video" :style="{animationDelay : index/3 + 's'}" @click="isActive = !isActive">
-        <div class="relative z-10 text-white group-hover:opacity-25">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ><polygon points="5 3 19 12 5 21 5 3" /></svg>
+    <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+      <li v-for="(interview, index) in interviews.interviews" :key="interview.id" class="relative flex items-center justify-center w-full h-full border-b border-r border-white border-opacity-25 fadeIn video" :style="{animationDelay : index/3 + 's'}" @click="isActive = !isActive">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute z-10 w-12 h-12 text-white" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+        <div class="relative block w-full overflow-hidden bg-gray-100 group aspect-w-16 aspect-h-9 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500">
+          <img :src="interview.thumbnail" alt="" class="object-cover pointer-events-none group-hover:opacity-75">
         </div>
-        <div class="absolute bottom-0 z-10 w-full p-2 leading-tight text-white bg-gradient-to-t from-bg-opacity to-transparent">
-          <h3 class="font-bold">
-            Mario Delgado
-          </h3>
-          <span class="text-xs font-bold tracking-wider uppercase opacity-50">Santa María Chimalapa</span>
-        </div>
-        <video loop muted class="absolute inset-0 object-cover w-full h-full" @mouseover="playVideo($event)" @mouseleave="pauseVideo($event)">
-          <source :src="`${require('@/assets/placeholder.mp4')}`" type="video/mp4">
-        </video>
-      </div>
-    </div>
+      </li>
+    </ul>
     <div v-if="isActive" class="absolute inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" style="backdrop-filter: blur(11px);">
       <div>
         <div class="flex justify-between mb-4">
@@ -58,6 +42,11 @@
 
 <script>
 export default {
+  name: 'Entrevistas',
+  async asyncData ({ $content }) {
+    const interviews = await $content('interviews').fetch()
+    return { interviews }
+  },
   data () {
     return {
       isActive: false

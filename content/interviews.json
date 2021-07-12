@@ -1,0 +1,107 @@
+{
+  "title": "Entrevistas",
+  "interviews": [
+    {
+      "id": 1,
+      "name": "Francisco Espinoza",
+      "link": "https://www.youtube.com/embed/oKpV1yCK4Ys?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/oKpV1yCK4Ys/hqdefault.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ceyla Cruz",
+      "link": "https://www.youtube.com/embed/P9jFjIVmbIw?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/P9jFjIVmbIw/hqdefault.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Elmer Mendoza",
+      "link": "https://www.youtube.com/embed/KakAyl_kE7g?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/KakAyl_kE7g/hqdefault.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Aurora Ordaz",
+      "link": "https://www.youtube.com/embed/-0AHfIh1Q9U?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/-0AHfIh1Q9U/hqdefault.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Diana Álvarez",
+      "link": "https://www.youtube.com/embed/ox3Hd2zL38M?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/ox3Hd2zL38M/hqdefault.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Rusvel Toledo",
+      "link": "https://www.youtube.com/embed/sKVO5q462ss?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/sKVO5q462ss/hqdefault.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Elsa Becerril",
+      "link": "https://www.youtube.com/embed/4MqNJAtCpuw?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/4MqNJAtCpuw/hqdefault.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Rogelio González",
+      "link": "https://www.youtube.com/embed/ObGf8xqrbr4?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/ObGf8xqrbr4/hqdefault.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Enrique Figueroa",
+      "link": "https://www.youtube.com/embed/VPFMx1Vn73E?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/VPFMx1Vn73E/hqdefault.jpg"
+    },
+    {
+      "id": 10,
+      "name": "José Fuentes",
+      "link": "https://www.youtube.com/embed/11KJFlQP7sw?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/11KJFlQP7sw/hqdefault.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Rafael Marín",
+      "link": "https://www.youtube.com/embed/3wlLZ1MOyg8?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/3wlLZ1MOyg8/hqdefault.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Alberto Reyna",
+      "link": "https://www.youtube.com/embed/Oe_0xV9qM2M?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/Oe_0xV9qM2M/hqdefault.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Griselda López",
+      "link": "https://www.youtube.com/embed/yJ-w0QSn9Qk?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/yJ-w0QSn9Qk/hqdefault.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Maria Antonio",
+      "link": "https://www.youtube.com/embed/rkkJ7Ifn4Hg?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/rkkJ7Ifn4Hg/hqdefault.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Adan Esteva",
+      "link": "https://www.youtube.com/embed/zD8sn8_aiIU?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/zD8sn8_aiIU/hqdefault.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Irving Cabrera",
+      "link": "https://www.youtube.com/embed/q-FpbSrl3Vg?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/q-FpbSrl3Vg/hqdefault.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Antonia Jiménez",
+      "link": "https://www.youtube.com/embed/2jJYKWy8EWs?controls=0",
+      "thumbnail": "https://img.youtube.com/vi/2jJYKWy8EWs/hqdefault.jpg"
+    }
+  ]
+}
