@@ -15,11 +15,11 @@
       </transition>
       <transition
         enter-active-class="duration-200 ease-out"
-        enter-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-        enter-to-class="translate-y-0 opacity-100 sm:scale-100"
+        enter-class="scale-95 translate-y-0 opacity-0"
+        enter-to-class="scale-100 translate-y-0 opacity-100"
         leave-active-class="duration-100 ease-in"
-        leave-class="translate-y-0 opacity-100 sm:scale-100"
-        leave-to-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+        leave-class="scale-100 translate-y-0 opacity-100"
+        leave-to-class="scale-95 translate-y-0 opacity-0"
       >
         <div
           v-if="isOpen"
