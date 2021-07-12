@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col min-h-screen bg-center bg-cover lg:h-screen bg-primary font-body" :style="{'background-image': `url(${require('@/assets/img/cover-home.jpg')})`}">
+  <section class="relative flex flex-col min-h-screen bg-center bg-cover lg:h-screen bg-primary-500 font-body" :style="{'background-image': `url(${require('@/assets/img/cover-home.jpg')})`}">
     <div class="absolute inset-0 opacity-50 bg-gradient-to-b from-black to-transparent" />
     <div class="relative z-10 flex items-center flex-1 w-11/12 mx-auto">
       <div class="flex flex-col items-start max-w-2xl">
@@ -22,27 +22,27 @@
       </div>
     </div>
     <nav class="relative z-10 flex flex-wrap items-center justify-between border-t border-white border-opacity-25 lg:flex-no-wrap">
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/documental">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" href="/documental">
         Documental
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </a>
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/mapa">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" href="/mapa">
         Mapa
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </a>
-      <nuxt-link class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary" to="/entrevistas">
+      <nuxt-link class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" to="/entrevistas">
         Entrevistas
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </nuxt-link>
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/metodologia">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" href="/metodologia">
         Metodología
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </a>
-      <nuxt-link class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary" to="/conclusiones">
+      <nuxt-link class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" to="/conclusiones">
         Lecciones
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </nuxt-link>
-      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary" href="/acerca">
+      <a class="flex items-center justify-between w-full p-4 text-sm font-bold tracking-wider text-center text-white uppercase transition-all duration-75 ease-in border-l border-r border-white border-opacity-25 hover:bg-white hover:text-primary-500" href="/acerca">
         Acerca de
         <svg class="w-4 h-4 ml-2 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
       </a>

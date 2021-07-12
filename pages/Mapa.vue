@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center h-screen bg-center bg-cover lg:h-screen bg-primary font-body">
+  <section class="relative flex flex-col items-center justify-center h-screen bg-center bg-cover lg:h-screen bg-primary-500 font-body">
     <InnerMenu header="is-dark" />
 
     <div class="text-center">
@@ -65,15 +65,15 @@
   }
 
   .location .name {
-    @apply p-1 text-primary inline-block bg-secondary font-bold;
+    @apply p-1 text-primary-500 inline-block bg-secondary-500 font-bold;
   }
 
   .location .line {
-    @apply h-px bg-secondary;
+    @apply h-px bg-secondary-500;
   }
 
   .location .dot {
-    @apply w-3 h-3 bg-secondary rounded-full inline-block;
+    @apply w-3 h-3 bg-secondary-500 rounded-full inline-block;
     box-shadow: 0 0 0 1.5px #22534E,
                 0 0 0 2px #FBB4A8,
                 0 0 0 3.5px #22534E,
