@@ -57,7 +57,7 @@
                 <p><a href="../Acerca"> Conoce más sobre los aliados y el Laboratorio de Aceleración</a></p>
               </article>
             </div>
-            <div class="w-1/2 h-full bg-black bg-cover" style="clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/1.jpg')})`}" />
+            <div class="w-1/2 h-full bg-black bg-cover" style="clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/4.png')})`}" />
           </div>
         </div>
       </section>
