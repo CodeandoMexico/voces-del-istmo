@@ -3,7 +3,7 @@ _id: 7
 image: 'sayula.jpg'
 name: 'Sayula de Alemán'
 state: 'Veracruz'
-date: '06 de octubre'
+date: '06 de octubre de 2019'
 location: 'Instalaciones de una asociación ganadera local del municipio de Sayula de Alemán'
 description: 'En el comedor comunitario de Jaltepec de Candayoc, Oaxaca, el sábado 5 de octubre se llevó a cabo la reunión.'
 intro: '<p>Las personas que asistieron a la reunión, de distintos grupos étnicos, provenían de localidades cercanas a la frontera entre Oaxaca y Veracruz —San Lucas Ojitlán (Oaxaca), Abasolo del Valle y Pajapan (Veracruz), entre otros— y fueron muy participativas y propositivas durante la reunión: sugirieron un formato de intervenciones intercaladas entre funcionarios y audiencia, así como presentaron una minuta organizada con los puntos que querían demandar y discutir. Sus participaciones giraron en torno a estos temas:</p><ul><li>cómo garantizar recursos para los pueblos poniendo privilegiando la población indígena, </li><li>discriminación y exclusión de los pueblos indígenas,  </li><li>soluciones concretas y no discursos,  </li><li>cómo se incluirá a los pueblos indígenas en los proyectos de desarrollo (¿como obreros?)</li><li>impacto ambiental del proyecto,  </li><li>relaciones entre el campo y la ciudad y </li><li>“legitimación”, mas no “complicidad”, del proceso de consulta.</li></ul><p>Los cambios que se proyectan con el Corredor Interoceánico en la región dividieron las opiniones. Por un lado, hubo quienes consideraron que, si se manejan bien, el proyecto podría ser una gran oportunidad social y económica para las comunidades. Por otro lado, hubo quienes consideran que sólo se trata de “engaños” del gobierno, con más programas paternalistas que sólo aumentan la pobreza. 

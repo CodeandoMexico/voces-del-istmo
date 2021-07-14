@@ -3,10 +3,14 @@ _id: 3
 image: 'salina-cruz.jpg'
 name: 'Salina Cruz'
 state: 'Oaxaca'
-date: '05 de octubre'
+date: '05 de octubre de 2019'
 location: 'Auditorio municipal de Salina Cruz'
 description: 'El sábado 5 de octubre se llevó a cabo en el auditorio municipal de la ciudad de Salina Cruz.'
-intro: '<p>A la asamblea asistieron las autoridades y representantes de los llamados “pueblos del mar” o “mareños” de Oaxaca: San Mateo del Mar, San Dionisio del Mar, San Francisco del Mar y Santa María del Mar. Todas estas comunidades fueron severamente afectadas por los sismos de 2017, por lo que la falta de apoyo gubernamental en la reconstrucción —así como la falta de electricidad en la zona— resultó en reclamos y demandas por parte de las asistentes, hacia  las autoridades locales (presidentes municipales), estatales y federales reunidas allí.</p><p> La dinámica de la asamblea consistió en que las y los funcionarios públicos, al frente en un presídium, debían presentar por turnos los avances de sus dependencias en el cumplimiento de las peticiones que han surgido a lo largo del proceso de consulta, para después pasar a intervenciones de la población. Una votación general de la audiencia resultó en cambiar el formato: una a una fueron encaradas y cuestionadas las personas representantes sentadas en el presídium. Para los mareños, estas conversaciones son una posibilidad de manifestar de primera mano —de manera horizontal y sin intermediarios— sus necesidades e inquietudes ante autoridades competentes. Por lo tanto, algunas personas consideraron que las y los representantes gubernamentales deben de tener continuidad frente a las distintas comunidades y a lo largo de todas las reuniones de la consulta; de lo contrario, es “tiempo perdido”. La representante del INPI incluso señaló: “no recuerdo que alguien —antes— haya venido a preguntar directamente a las comunidades”.</p>'
+intro: '<p>El sábado 5 de octubre se llevó a cabo en el auditorio municipal de la ciudad de Salina Cruz, el evento que convocó a las autoridades y representantes de los llamados “pueblos del mar” o “mareños” de Oaxaca: San Mateo del Mar, San Dionisio del Mar, San Francisco del Mar y Santa María del Mar, localidades que se ubican en el sureste del estado de Oaxaca. Los pueblos del mar se conforman principalmente por población indígena huave/ Ikoots.</p>
+
+<p>Estos pueblos y sus comunidades tuvieron grandes afectaciones a causa de los terremotos del año 2017. Lo que sufrieron, así como la falta de apoyos gubernamentales, tanto federales como estatales, es un reclamo constante y enérgico de parte de la población de estas localidades.</p>
+
+<p>La consulta se llevó a cabo en un ambiente de cordialidad, donde si bien hubo momentos álgidos, ello no entorpeció los acuerdos y los compromisos que, en conjunto y en un marco de corresponsabilidad, deberán cumplir instituciones y comunidad. Para muchas personas de los Pueblos del Mar, la consulta representa la primera oportunidad de platicar con autoridades federales de manera directa y sin intermediarios. </p>'
 interviews:
   - name: 'Juan'
     position: 'Residente de San Mateo del Mar'

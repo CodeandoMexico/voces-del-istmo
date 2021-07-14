@@ -3,11 +3,14 @@ _id: 2
 image: 'santa-maria.jpg'
 name: 'Santa María Chimalapa'
 state: 'Oaxaca'
-date: '06 de octubre'
+date: '06 de octubre de 2019'
 location: 'Templete del centro de Santa María'
 description: 'La asamblea se realizó el domingo 6 de octubre en el templete del centro de Santa María.'
-intro: '<p>La audiencia había convocado a las autoridades y representantes de los pueblos zoques,  principalmente de las comunidades de San Miguel y Santa María, así como de otras localidades cercanas: incluso hubo personas que, por la falta de infraestructura, hicieron viajes de hasta 12 horas para asistir. Aunque desde el inicio hubo reclamos de parte de las y los asistentes inconformes, la asamblea funcionó como un espacio para compartir opiniones y deliberar. En particular, la falta de atención médica y servicios de salud fueron de las demandas más recurrentes. Cabe destacar que hubo poca participación de mujeres en esta junta.</p><p>A pesar de la tensión general a lo largo de la asamblea, los representantes zoques expusieron diferentes puntos de vista hasta llegar al consenso mientras demostraron cómo entienden las personas de los Chimalapas —“gente de lucha”, como se autodenominan ellas— el proceso colectivo de la toma de decisiones: con ellas al centro. Resaltó la importancia que los zoques le dan a estos espacios, así como el sentirse escuchados también, a pesar de manifestar gran desconfianza hacia el Gobierno de México: “varios servidores o varias personas públicas al servicio del estado, pues no han cumplido con su función como deben, hemos compartido ideas, puntos de vista con muchos compañeros y con las autoridades que nos representan, tanto comunal como agrario, esperamos que a partir de las visitas […], vayan formando o formulando un esquema de trabajo que sea procedimental para el avance hacia lo que queremos”. También se dijo que no iban a “dejarse engañar”, menos “en mi propia casa”. 
-</p>'
+intro: '<p>A Santa María Chimalapa, asistieron principalmente personas de San Miguel y Santa María, localidades separadas por conflictos de delimitación territorial. Por esto y por la falta de infraestructura en general, hubo personas que realizaron viajes de hasta doce horas para poder asistir a la reunión que no está a más de 100 kilómetros de distancia. La asamblea se realizó en el templete del centro de Santa María, donde se convocó a las autoridades y representantes de los pueblos Zoques. Esta región se caracteriza por tener disputas territoriales y agrarias ancestrales que no han logrado ser resueltas en décadas: la resolución de las disputas es la principal demanda de estos pueblos.</p>
+
+<p>En esta asamblea desde el inicio y hasta el final se expresó el sentimiento de inconformidad. Hubo interrupciones y muestras permanentes de inconformidad, el robo de palabra fue la constante, y al insistir que no querían escuchar más, clamaban: “es pura mentira lo que están hablando”</p>
+
+<p>Principalmente los reclamos eran que no hay “propuestas concretas” sobre el tema de interés histórico de las comunidades respecto al conflicto del territorio y los problemas agrarios. En general hubo poca participación de mujeres durante la asamblea.</p>'
 interviews:
   - name: 'Rogelio'
     position: 'Campesino'

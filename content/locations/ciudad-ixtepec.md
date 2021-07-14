@@ -3,11 +3,12 @@ _id: 1
 image: 'ixtepec.jpg'
 name: 'Ciudad Ixtepec'
 state: 'Oaxaca'
-date: '05 de octubre'
+date: '05 de octubre de 2019'
 location: ' Centro Deportivo de Ciudad Ixtepec'
 description: 'El evento se llevó a cabo el sábado 5 de octubre en la sede del Centro Deportivo de Ciudad Ixtepec.'
-intro: '<p>Comenzó temprano la asamblea: a las 10 de la mañana ya estaban presentes las autoridades municipales y demás representantes del pueblo zapoteco binnizá (o “gente que proviene de las nubes”). Asistieron también varios representantes del gobierno (del CITT, la SEGOB y el INPI, los organizadores). De las comunidades, participaron principalmente los representantes de la Asamblea Regional Consultiva, al igual que comuneros, ejidatarios, campesinos, pescadores, directores de escuelas y mujeres organizadas de Juchitán.</p>
-<p>En general, todo aconteció en orden, sin mayores problemas: los asistentes tomaron notas y se apuntaron en una lista para participar después de las presentaciones de cada funcionario. El señor Alberto, uno de los presentes, señaló: “el reto principal, como es una consulta que trata de un Megaproyecto…es quitarle a la gente el hecho de que los Megaproyectos son malos, traen la cultura de la muerte”; “la opinión [de las comunidades] debería ser vinculante, deberían tener la capacidad de decir ¡No! y se debiera respetar, o decir ¡Sí!.. Con estas condiciones y se debería respetar”. Sin duda, una inquietud que estuvo muy presente a lo largo de todas las participaciones es que todo el proceso debe construir y mantener vínculos con las representantes, para informarse continuamente y tomar decisiones colectivas. Algunos resultados importantes del evento fueron los lineamientos para la propuesta de trabajo a futuro, así como las mesas de trabajo para dialogar y planear.</p>'
+intro: '<p>El pueblo zapoteco está concentrado en las ciudades de Juchitán, Tehuantepec, Salina Cruz, Matías Romero, Ciudad lxtepec y localidades cercanas y colindantes. Todas en el sureste del estado de Oaxaca. En esta región del Istmo, confluyen mestizos e indígenas que configuran su territorio desde la resistencia y la identidad. La región se caracteriza por la diversidad de recursos naturales, en particular, la zona atrae proyectos de energía eólica. Para esta reunión se convocó a las a las autoridades municipales y representantes del pueblo Zapoteco, Binniza o “gente que proviene de las nubes”, como se les conoce.</p>
+
+<p>Al dar inicio, en la reunión había aproximadamente 80 asistentes, a lo largo de la mañana, de manera paulatina, se incrementó el quórum hasta llenar la sala con aproximadamente 200 personas. En sus participaciones fue notorio que se les escuchaba, algunos retomaban, de manera textual, lo mencionado por los funcionarios para exponer sus demandas y lo que aún faltaba por trabajar. Este orden se mantuvo durante el curso de toda la reunión de seguimiento. Las interrupciones o robos de palabra fueron escasos.</p>'
 interviews:
   - name: 'Enrique'
     position: 'Director de 33 primaria de Juchitán'
