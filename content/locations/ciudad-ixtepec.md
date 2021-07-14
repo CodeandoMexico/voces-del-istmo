@@ -3,7 +3,7 @@ _id: 1
 image: 'ixtepec.jpg'
 name: 'Ciudad Ixtepec'
 state: 'Oaxaca'
-date: '05 de octubre'
+date: '05 de octubre de 2019'
 location: ' Centro Deportivo de Ciudad Ixtepec'
 description: 'El evento se llevó a cabo el sábado 5 de octubre en la sede del Centro Deportivo de Ciudad Ixtepec.'
 intro: '<p>Comenzó temprano la asamblea: a las 10 de la mañana ya estaban presentes las autoridades municipales y demás representantes del pueblo zapoteco binnizá (o “gente que proviene de las nubes”). Asistieron también varios representantes del gobierno (del CITT, la SEGOB y el INPI, los organizadores). De las comunidades, participaron principalmente los representantes de la Asamblea Regional Consultiva, al igual que comuneros, ejidatarios, campesinos, pescadores, directores de escuelas y mujeres organizadas de Juchitán.</p>
