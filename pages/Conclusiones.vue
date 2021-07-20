@@ -1,6 +1,5 @@
 <template>
   <div>
-    <InnerMenu :header="header" />
     <full-page id="fullpage" ref="fullpage" :options="options">
       <section class="section" data-header="is-light">
         <div class="flex flex-col justify-center h-screen border-b">
@@ -54,42 +53,39 @@
         </article>
       </section>
       <section class="section" data-header="is-light">
-      <div class="flex flex-col justify-center h-screen p-10">
-        <header class="mb-10">
-          <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display fadeUp">
-            Oportunidades
-          </h1>
-        </header>
-        <div class="flex items-stretch justify-between">
-          <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary-500" style="animation-delay: 1s">
-            <p>Sin duda, estos ejercicios de participación han detonado la sensibilización, el diálogo abierto, la comunicación horizontal, la empatía y paciencia para todas las personas involucradas. A partir de lo que se logró documentar a través de las Voces del Istmo, vale la pena señal algunas ideas que, a manera de oportunidades, se han identificado como espacios para mejorar la sinergia entre las comunidades y el gobierno.</p>
-            <p>También se debe buscar que la participación sea extendida a los diferentes núcleos de población que componen las diferentes comunidades involucradas en las consultas, ya que, como manifestaron algunos representantes de las localidades, la información que ha llegado hacia la sociedad local aún no es suficiente. Muchas personas desconocen la celebración de estas consultas.</p>
-            <p>Atender, de manera directa, la difusión y divulgación masiva del ejercicio de consulta y las experiencias locales permitiría romper supuestos negativos que las personas tienen del proceso, y dejar que todas y todos los residentes y habitantes de la región puedan expresarse, hacer escuchar su voz y que se logre visibilizar la enorme diversidad que da sentido a esta región.</p>
-           </article>
-           <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
+        <div class="flex flex-col justify-center h-screen p-10">
+          <header class="mb-10">
+            <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display fadeUp">
+              Oportunidades
+            </h1>
+          </header>
+          <div class="flex items-stretch justify-between">
+            <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary-500" style="animation-delay: 1s">
+              <p>Sin duda, estos ejercicios de participación han detonado la sensibilización, el diálogo abierto, la comunicación horizontal, la empatía y paciencia para todas las personas involucradas. A partir de lo que se logró documentar a través de las Voces del Istmo, vale la pena señal algunas ideas que, a manera de oportunidades, se han identificado como espacios para mejorar la sinergia entre las comunidades y el gobierno.</p>
+              <p>También se debe buscar que la participación sea extendida a los diferentes núcleos de población que componen las diferentes comunidades involucradas en las consultas, ya que, como manifestaron algunos representantes de las localidades, la información que ha llegado hacia la sociedad local aún no es suficiente. Muchas personas desconocen la celebración de estas consultas.</p>
+              <p>Atender, de manera directa, la difusión y divulgación masiva del ejercicio de consulta y las experiencias locales permitiría romper supuestos negativos que las personas tienen del proceso, y dejar que todas y todos los residentes y habitantes de la región puedan expresarse, hacer escuchar su voz y que se logre visibilizar la enorme diversidad que da sentido a esta región.</p>
+            </article>
+            <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
               <small class="block w-full lg:w-2/3">
                 <h3 class="mb-2 font-bold tracking-wider uppercase">Fortalecer mecanismos de seguimiento, continuidad y reciprocidad para con las comunidades.</h3><br>
                 <h3 class="mb-2 font-bold tracking-wider uppercase">Promover la coordinación inter e intra gubernamental en el marco del proyecto de Desarrollo.</h3><br>
                 <h3 class="mb-2 font-bold tracking-wider uppercase">Fortalecer un enfoque desde la diversidad social, cultural y Ambiental.</h3>
               </small>
-          </aside>
+            </aside>
+          </div>
         </div>
-      </div>
-     </section>
+      </section>
     </full-page>
   </div>
 </template>
 
 <script>
-import InnerMenu from '@/components/InnerMenu.vue'
 
 export default {
-  components: {
-    InnerMenu
-  },
+  name: 'Conclusiones',
+  layout: 'LayoutMainContent',
   data () {
     return {
-      header: 'is-light',
       slideIndex2: 1,
       sliding: false,
       options: {

@@ -1,7 +1,5 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center h-screen bg-center bg-cover lg:h-screen bg-primary-500 font-body">
-    <InnerMenu header="is-dark" />
-
+  <section class="relative flex flex-col items-center justify-center h-full bg-center bg-cover bg-primary-500 font-body">
     <div class="text-center">
       <h1 class="text-2xl italic text-white font-display">
         Mapa
@@ -56,46 +54,48 @@
   </section>
 </template>
 
+<script>
+export default {
+  name: 'Mapa',
+  layout: 'LayoutMainContent'
+}
+</script>
+
 <style>
+.location {
+  @apply flex items-center absolute;
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
 
-  .location {
-    @apply flex items-center absolute;
-    animation: fadeIn 1s ease-in forwards;
-    opacity: 0;
-  }
+.location .name {
+  @apply p-1 text-primary-500 inline-block bg-secondary-500 font-bold;
+}
 
-  .location .name {
-    @apply p-1 text-primary-500 inline-block bg-secondary-500 font-bold;
-  }
+.location .line {
+  @apply h-px bg-secondary-500;
+}
 
-  .location .line {
-    @apply h-px bg-secondary-500;
-  }
+.location .dot {
+  @apply w-3 h-3 bg-secondary-500 rounded-full inline-block;
+  box-shadow: 0 0 0 1.5px #22534e, 0 0 0 2px #fbb4a8, 0 0 0 3.5px #22534e,
+    0 0 0 4px rgba(251, 180, 168, 0.5), 0 0 0 6.5px #22534e,
+    0 0 0 7px rgba(251, 180, 168, 0.3), 0 0 0 12.5px #22534e,
+    0 0 0 13px rgba(251, 180, 168, 0.1);
+  transition: all 0.2s ease-in;
+}
 
-  .location .dot {
-    @apply w-3 h-3 bg-secondary-500 rounded-full inline-block;
-    box-shadow: 0 0 0 1.5px #22534E,
-                0 0 0 2px #FBB4A8,
-                0 0 0 3.5px #22534E,
-                0 0 0 4px rgba(251,180,168, 0.5),
-                0 0 0 6.5px #22534E,
-                0 0 0 7px rgba(251,180,168, 0.3),
-                0 0 0 12.5px #22534E,
-                0 0 0 13px rgba(251,180,168, 0.1);
-                transition: all 0.2s ease-in;
-  }
+.location:hover .dot {
+  transform: scale(2);
+}
 
-  .location:hover .dot {
-    transform: scale(2);
-  }
+.location:hover {
+  box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.1);
+}
 
-  .location:hover {
-    box-shadow: 0 0 0 100em rgba(0,0,0,0.1);
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
+}
 </style>

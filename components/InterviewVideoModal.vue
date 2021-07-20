@@ -72,22 +72,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  watch: {
-    isOpen: {
-      immediate: true,
-      handler (isOpen) {
-        if (process.client) {
-          if (isOpen) {
-            document.getElementById('interviews-grid').classList.add('overflow-y-hidden')
-          } else {
-            setTimeout(() => {
-              document.getElementById('interviews-grid').classList.remove('overflow-y-hidden')
-            }, 200)
-          }
-        }
-      }
-    }
   }
 }
 </script>

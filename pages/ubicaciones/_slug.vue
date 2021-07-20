@@ -1,6 +1,5 @@
 <template>
   <section class="location">
-    <InnerMenu :header="header" />
     <prev-next :prev="prev" :next="next" />
     <client-only>
       <full-page id="fullpage" ref="fullpage" :options="options">
@@ -88,17 +87,11 @@
 </template>
 
 <script>
-import AnimatedTitle from '@/components/AnimatedTitle.vue'
-import InnerMenu from '@/components/InnerMenu.vue'
-import PrevNext from '@/components/PrevNext.vue'
 
 export default {
-  components: {
-    AnimatedTitle,
-    InnerMenu,
-    PrevNext
-  },
-  async asyncData ({ $content, params, error }) {
+  name: 'UbicacionesSlug',
+  layout: 'LayoutMainContent',
+  async asyncData ({ $content, params }) {
     const location = await $content('locations', params.slug).fetch()
     const [prev, next] = await $content('locations').only(['name', 'slug']).sortBy('createdAt', 'asc').surround(params.slug).fetch()
 

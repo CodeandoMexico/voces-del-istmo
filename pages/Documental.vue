@@ -1,5 +1,12 @@
 <template>
-  <section id="interviews-grid" class="h-screen overflow-y-auto bg-black">
-    <InnerMenu header="is-dark" />
+  <section class="h-full bg-black">
+    hola
   </section>
 </template>
+
+<script>
+export default {
+  name: 'Documental',
+  layout: 'LayoutMainContent'
+}
+</script>

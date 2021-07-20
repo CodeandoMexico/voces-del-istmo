@@ -1,7 +1,6 @@
 <template>
-  <section id="interviews-grid" class="h-screen overflow-y-auto bg-black">
-    <InnerMenu header="is-dark" />
-    <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+  <section class="h-full bg-black">
+    <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 bg-black">
       <li v-for="(interview, index) in interviews.interviews" :key="interview.id" class="relative flex items-center justify-center w-full h-full border-b border-r border-white border-opacity-25 fadeIn video" :style="{animationDelay : index/3 + 's'}" @click="getSelectedInterview(interview)">
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute z-10 w-12 h-12 text-white" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
@@ -18,6 +17,7 @@
 <script>
 export default {
   name: 'Entrevistas',
+  layout: 'LayoutMainContent',
   async asyncData ({ $content }) {
     const interviews = await $content('interviews').fetch()
     return { interviews }
