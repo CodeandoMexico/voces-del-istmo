@@ -20,13 +20,7 @@
       leave-to-class="translate-y-1 opacity-0"
     >
       <div v-show="isActive" class="fixed inset-0 flex flex-col h-full overflow-y-auto bg-primary-500">
-        <!-- <button class="p-4 ml-auto mr-3 text-sm font-bold tracking-wider uppercase outline-none sm:text-base text-secondary-500" @click="isActive = !isActive">
-          Cerrar
-        </button> -->
         <button class="flex items-center w-auto p-4 ml-auto font-bold tracking-wider uppercase transition-all duration-75 ease-in text-secondary-500 hover:opacity-50" @click="isActive = !isActive">
-          <!-- <svg class="w-6 h-6 mr-1 currentColor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg> -->
           <svg class="w-6 h-6 mr-1 currentColor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>

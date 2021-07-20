@@ -91,6 +91,7 @@
 export default {
   name: 'UbicacionesSlug',
   layout: 'LayoutMainContent',
+  transition: 'tweakOpacity',
   async asyncData ({ $content, params }) {
     const location = await $content('locations', params.slug).fetch()
     const [prev, next] = await $content('locations').only(['name', 'slug']).sortBy('createdAt', 'asc').surround(params.slug).fetch()
