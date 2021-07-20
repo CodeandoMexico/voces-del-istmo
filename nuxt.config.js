@@ -21,6 +21,8 @@ export default {
 
   ],
 
+  layoutTransition: 'tweakOpacity',
+
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
@@ -33,6 +35,8 @@ export default {
   ],
 
   tailwindcss: {
+    configPath: '~/config/tailwind.config.js',
+    cssPath: '~/assets/scss/main.scss',
     jit: true
   },
 

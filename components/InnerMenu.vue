@@ -1,46 +1,72 @@
 <template>
-  <header class="fixed top-0 z-50 flex items-center justify-between w-full transition-all duration-75 ease-in" :class="header">
-    <nuxt-link to="/" class="flex items-center w-auto p-4 font-bold tracking-wider uppercase transition-all duration-75 ease-in hover:opacity-50">
+  <header class="sticky top-0 z-30 flex items-center justify-between w-full px-4 transition-all duration-75 ease-in bg-primary-500">
+    <nuxt-link to="/" class="flex items-center w-auto p-4 font-bold tracking-wider uppercase transition-all duration-75 ease-in text-secondary-500 hover:opacity-50">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
       Regresar
     </nuxt-link>
-    <button class="flex items-center p-4 font-bold tracking-wider uppercase outline-none hover:opacity-50" @click="isActive = !isActive">
-      <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    <button class="flex items-center w-auto p-4 font-bold tracking-wider uppercase transition-all duration-75 ease-in text-secondary-500 hover:opacity-50" @click="isActive = !isActive">
+      <svg class="w-6 h-6 mr-1 currentColor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
       Menu
     </button>
 
-    <div v-if="isActive" class="fixed inset-0 bg-primary-500">
-      <div class="flex items-center justify-between p-4">
-        <h2 class="text-sm font-bold tracking-wider uppercase text-secondary-500">
-          Menu
-        </h2>
-        <button class="text-sm font-bold tracking-wider uppercase outline-none text-secondary-500" @click="isActive = !isActive">
+    <transition
+      enter-active-class="duration-200 ease-out"
+      enter-class="translate-y-1 opacity-0"
+      enter-to-class="translate-y-0 opacity-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-class="translate-y-0 opacity-100"
+      leave-to-class="translate-y-1 opacity-0"
+    >
+      <div v-show="isActive" class="fixed inset-0 flex flex-col h-full overflow-y-auto bg-primary-500">
+        <!-- <button class="p-4 ml-auto mr-3 text-sm font-bold tracking-wider uppercase outline-none sm:text-base text-secondary-500" @click="isActive = !isActive">
+          Cerrar
+        </button> -->
+        <button class="flex items-center w-auto p-4 ml-auto font-bold tracking-wider uppercase transition-all duration-75 ease-in text-secondary-500 hover:opacity-50" @click="isActive = !isActive">
+          <!-- <svg class="w-6 h-6 mr-1 currentColor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg> -->
+          <svg class="w-6 h-6 mr-1 currentColor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
           Cerrar
         </button>
+
+        <div class="grid flex-1 grid-cols-1 text-4xl divide-x divide-white divide-opacity-25 lg:grid-cols-2">
+          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/" @click.native="isActive=false">
+            Inicio
+          </nuxt-link>
+          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/intro" @click.native="isActive=false">
+            Introducción
+          </nuxt-link>
+          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/documental" @click.native="isActive=false">
+            Documental
+          </nuxt-link>
+          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/mapa" @click.native="isActive=false">
+            Mapa
+          </nuxt-link>
+          <nuxt-link class="border-t border-b border-white border-opacity-25 inner-item" to="/entrevistas" @click.native="isActive=false">
+            Entrevistas
+          </nuxt-link>
+          <nuxt-link class="border-t border-b border-white border-opacity-25 inner-item" to="/metodologia" @click.native="isActive=false">
+            Metodología
+          </nuxt-link>
+          <nuxt-link class="border-t border-b border-white border-opacity-25 inner-item" to="/conclusiones" @click.native="isActive=false">
+            Lecciones
+          </nuxt-link>
+          <nuxt-link class="border-t border-b border-white border-opacity-25 inner-item" to="/acerca" @click.native="isActive=false">
+            Acerca de
+          </nuxt-link>
+        </div>
       </div>
-      <div class="grid h-full grid-rows-5 text-4xl lg:grid-cols-2">
-        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/">Inicio</a>
-        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/into">Introducción</a>
-        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/documental">Documental</a>
-        <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/mapa">Mapa</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/entrevistas">Entrevistas</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/metodologia">Metodología</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/conclusiones">Lecciones</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary-500 font-display hover:bg-bg-opacity" href="/acerca">Acerca de</a>
-      </div>
-    </div>
+    </transition>
   </header>
 </template>
 
 <script>
 export default {
   name: 'InnerMenu',
-  props: {
-    header: {
-      type: String,
-      required: true
-    }
-  },
   data () {
     return {
       isActive: false
@@ -48,13 +74,8 @@ export default {
   }
 }
 </script>
-
 <style>
-  .is-dark {
-    @apply text-white bg-gradient-to-b from-bg-opacity to-transparent;
-  }
-
-  .is-light {
-    @apply text-primary-500;
-  }
+.inner-item {
+  @apply flex items-center justify-center text-white hover:text-secondary-500 font-display hover:bg-bg-opacity;
+}
 </style>
