@@ -15,7 +15,7 @@
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/1.jpg')})`}" />
       </div>
     </section>
-    <section class="grid w-full h-auto grid-cols-1 overflow-hidden border-b lg:h-full min border-primary-200 lg:grid-cols-2 lg:gap-2">
+    <section class="grid w-full h-auto grid-cols-1 overflow-hidden border-b lg:h-full border-primary-200 lg:grid-cols-2 lg:gap-2">
       <div class="order-last col-span-1 lg:order-first">
         <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />

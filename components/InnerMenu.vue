@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-30 flex items-center justify-between w-full px-4 transition-all duration-75 ease-in bg-primary-500">
+  <header class="sticky top-0 z-30 flex items-center justify-between w-full px-4 transition-all duration-75 ease-in shadow-lg bg-primary-500">
     <nuxt-link to="/" class="flex items-center w-auto p-4 font-bold tracking-wider uppercase transition-all duration-75 ease-in text-secondary-500 hover:opacity-50">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
       Regresar

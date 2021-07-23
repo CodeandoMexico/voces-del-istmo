@@ -16,9 +16,3 @@ export default {
   name: 'LayoutMainContent'
 }
 </script>
-
-<style>
-.main-content {
-  height: calc(100vh - 3.5rem);
-}
-</style>

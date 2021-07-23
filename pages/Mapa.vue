@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center h-full bg-center bg-cover bg-primary-500 font-body">
+  <section class="relative flex flex-col items-center justify-center h-full overflow-hidden bg-center bg-cover bg-primary-500 font-body">
     <div class="text-center">
       <h1 class="text-2xl italic text-white font-display">
         Mapa
@@ -9,46 +9,45 @@
       </p>
     </div>
 
-    <div class="relative flex items-center justify-center transform scale-50 lg:scale-100" style="width: 1000px;height: 600;">
+    <div class="relative flex items-center justify-center w-full overflow-hidden transform scale-50 max-w-7xl lg:scale-100" style="width: 1000px;height: 600px;">
       <nav class="absolute inset-0">
         <a class="location" href="/ubicaciones/sayula-de-aleman" style="top: 35%;left: 27%;">
           <span class="name">Sayula de Alemán</span>
           <div class="line" style="width: 70px" />
           <span class="dot" />
         </a>
-        <a class="location" href="/ubicaciones/jaltepec-de-candeyoc" style="top: 47%;left:15%; animation-delay: 0.2s;">
+        <a class="location" href="/ubicaciones/jaltepec-de-candeyoc" style="top: 47%;left:15%; ">
           <span class="name">Jaltepec de Candayoc</span>
           <div class="line" style="width: 110px;" />
           <span class="dot" />
         </a>
-        <a class="location" href="/ubicaciones/uxpanapa" style="top: 50%; right: 20%;animation-delay: 0.4s;">
+        <a class="location" href="/ubicaciones/uxpanapa" style="top: 50%; right: 20%;">
           <span class="dot" />
           <div class="line" style="width:100px;" />
           <span class="name">Uxpanapa</span>
 
         </a>
-        <a class="location" href="/ubicaciones/santa-maria-chimalapa" style="top: 58%;left: 10%;animation-delay: 0.6s;">
+        <a class="location" href="/ubicaciones/santa-maria-chimalapa" style="top: 58%;left: 10%;">
           <span class="name">Santa María Chimalpa</span>
           <div class="line" style="width:260px;" />
           <span class="dot" />
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top:65%;right:20%;animation-delay: 0.8s;">
+        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top:65%;right:20%;">
           <span class="dot" />
           <div class="line" style="width: 200px;" />
           <span class="name">Ciudad Ixtepec</span>
         </a>
-        <a class="location" href="/ubicaciones/salina-cruz" style="top: 73%; left: 25%;animation-delay: 1s">
+        <a class="location" href="/ubicaciones/salina-cruz" style="top: 73%; left: 25%;">
           <span class="name">Salina Cruz</span>
           <div class="line" style="width: 120px;" />
           <span class="dot" />
         </a>
-        <a class="location" href="/ubicaciones/san-pedro-huamelula" style="top: 78%; right: 15%;animation-delay: 1.2s;">
+        <a class="location" href="/ubicaciones/san-pedro-huamelula" style="top: 78%; right: 15%;">
           <span class="dot" />
           <div class="line" style="width: 280px;" />
           <span class="name">San Pedro Huamelula</span>
         </a>
       </nav>
-
       <img src="~/assets/img/mapa.svg" class="object-cover w-full h-full">
     </div>
   </section>
@@ -64,8 +63,6 @@ export default {
 <style>
 .location {
   @apply flex items-center absolute;
-  animation: fadeIn 1s ease-in forwards;
-  opacity: 0;
 }
 
 .location .name {
@@ -89,13 +86,4 @@ export default {
   transform: scale(2);
 }
 
-.location:hover {
-  box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.1);
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 </style>
