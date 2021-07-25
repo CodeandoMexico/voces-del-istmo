@@ -28,7 +28,7 @@
         </button>
 
         <div class="grid flex-1 grid-cols-1 text-4xl divide-x divide-white divide-opacity-25 lg:grid-cols-2">
-          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/" @click.native="isActive=false">
+          <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/" @click.native="removeOverflowHidden()">
             Inicio
           </nuxt-link>
           <nuxt-link class="border-t border-white border-opacity-25 inner-item" to="/intro" @click.native="isActive=false">
@@ -80,6 +80,12 @@ export default {
           }
         }
       }
+    }
+  },
+  methods: {
+    removeOverflowHidden () {
+      this.isActive = false
+      document.body.classList.remove('overflow-y-hidden')
     }
   }
 }
