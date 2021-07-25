@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col h-full bg-center bg-cover bg-primary-500 font-body" :style="{'background-image': `url(${require('@/assets/img/cover-home.jpg')})`}">
+  <section class="relative flex flex-col min-h-screen bg-center bg-cover bg-primary-500 font-body" :style="{'background-image': `url(${require('@/assets/img/cover-home.jpg')})`}">
     <div class="absolute inset-0 opacity-50 bg-gradient-to-b from-black to-transparent" />
     <div class="relative z-10 flex items-center flex-1">
       <div class="flex flex-col items-start max-w-2xl px-5 sm:px-14">

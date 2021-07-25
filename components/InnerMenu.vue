@@ -15,7 +15,7 @@
       enter-active-class="duration-200 ease-out"
       enter-class="translate-y-1 opacity-0"
       enter-to-class="translate-y-0 opacity-100"
-      leave-active-class="transition duration-150 ease-in"
+      leave-active-class="transition duration-200 ease-in"
       leave-class="translate-y-0 opacity-100"
       leave-to-class="translate-y-1 opacity-0"
     >
@@ -64,6 +64,22 @@ export default {
   data () {
     return {
       isActive: false
+    }
+  },
+  watch: {
+    isActive: {
+      immediate: true,
+      handler (isActive) {
+        if (process.client) {
+          if (isActive) {
+            document.body.classList.add('overflow-y-hidden')
+          } else {
+            setTimeout(() => {
+              document.body.classList.remove('overflow-y-hidden')
+            }, 200)
+          }
+        }
+      }
     }
   }
 }

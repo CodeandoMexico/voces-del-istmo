@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full">
-    <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:h-full border-primary-200 lg:grid-cols-2 lg:gap-2">
+  <div class="min-h-content">
+    <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
       <div class="flex flex-col justify-center col-span-1 px-10 my-20 text-left xl:my-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Introducción
@@ -15,7 +15,7 @@
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/1.jpg')})`}" />
       </div>
     </section>
-    <section class="grid w-full h-auto grid-cols-1 overflow-hidden border-b lg:h-full border-primary-200 lg:grid-cols-2 lg:gap-2">
+    <section class="grid w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
       <div class="order-last col-span-1 lg:order-first">
         <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />
@@ -31,7 +31,7 @@
         </article>
       </div>
     </section>
-    <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:h-full lg:grid-cols-2 lg:gap-2">
+    <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:min-h-content lg:grid-cols-2 lg:gap-2">
       <div class="flex flex-col justify-center col-span-1 p-10 text-left">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Voces del Istmo
@@ -48,7 +48,7 @@
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/4.png')})`}" />
       </div>
     </section>
-    <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:h-full lg:grid-cols-2 lg:gap-2 bg-primary-500">
+    <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:min-h-content lg:grid-cols-2 lg:gap-2 bg-primary-500">
       <div class="order-last col-span-1 lg:order-first">
         <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/3.jpg')})`}" />
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/3.jpg')})`}" />
@@ -58,7 +58,7 @@
           Explora las sedes
         </h1>
         <article class="max-w-3xl pr-10 text-primary-500">
-          <p class="block text-xs tracking-wider text-white opacity-50 font-body">
+          <p class="block text-xs tracking-wider text-white opacity-50">
             El proceso de Consulta se realizó en siete sedes a lo largo del Istmo de Tehuantepec durante 2019. El registro de <i>Voces del Istmo</i>  refiere a las siete sedes durante la segunda reunión de seguimiento el 5 y 6 de octubre.
           </p>
           <br>
@@ -69,7 +69,7 @@
                   {{ index+1 }}
                 </div>
                 <div class="leading-tight">
-                  <span class="block text-xs tracking-wider uppercase opacity-50 font-body">{{ location.state }}</span>
+                  <span class="block text-xs tracking-wider uppercase opacity-50">{{ location.state }}</span>
                   <span class="text-xl">{{ location.city }}</span>
                 </div>
               </div>

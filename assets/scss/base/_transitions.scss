@@ -16,13 +16,14 @@
   top: -10rem;
   left: -10rem;
   width: calc(100% + 20rem);
+  opacity: 0.4;
   height: calc(100% + 20rem);
   z-index: 50;
   content: '';
-  position: absolute;
+  position: fixed;
   pointer-events: none;
   background-position: 50%;
-  background-image: url(~assets/img/noise.png);
+  background-image: url('http://assets.iceable.com/img/noise-transparent.png');
   pointer-events: none;
   animation: noise 1s steps(2) infinite;
 }

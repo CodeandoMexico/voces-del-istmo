@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center h-full overflow-hidden bg-center bg-cover bg-primary-500 font-body">
+  <section class="relative flex flex-col items-center justify-center overflow-hidden bg-center bg-cover min-h-content bg-primary-500">
     <div class="text-center">
       <h1 class="text-2xl italic text-white font-display">
         Mapa
@@ -8,7 +8,6 @@
         Elige uno de los puntos de consulta para conocer más:
       </p>
     </div>
-
     <div class="relative flex items-center justify-center w-full overflow-hidden transform scale-50 max-w-7xl lg:scale-100" style="width: 1000px;height: 600px;">
       <nav class="absolute inset-0">
         <a class="location" href="/ubicaciones/sayula-de-aleman" style="top: 35%;left: 27%;">

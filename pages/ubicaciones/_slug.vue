@@ -1,7 +1,7 @@
 <template>
-  <div class="h-full">
+  <div class="min-h-content">
     <prev-next :prev="prev" :next="next" />
-    <section class="flex items-center h-full bg-center bg-cover bg-primary-500" :style="{ backgroundImage: `url(${bgImage})`}">
+    <section class="flex items-center bg-center bg-cover min-h-content bg-primary-500" :style="{ backgroundImage: `url(${bgImage})`}">
       <div class="flex flex-col items-center justify-center w-full h-full p-10 text-center md:w-1/2">
         <span class="text-6xl font-bold text-white">
           {{ location._id }}
@@ -17,10 +17,10 @@
         </p>
       </div>
     </section>
-    <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:h-full lg:grid-cols-3 lg:gap-2 white-pattern-background">
+    <section class="grid w-full h-full grid-cols-1 overflow-hidden lg:min-h-content lg:grid-cols-3 lg:gap-2 white-pattern-background">
       <div class="flex flex-col justify-center col-span-2 p-6 space-y-4 text-left sm:space-y-8 sm:p-10">
         <div class="flex flex-col">
-          <span class="inline-block p-1 text-sm font-bold tracking-wider uppercase text-primary-500 font-body fadeUp">
+          <span class="inline-block p-1 text-sm font-bold tracking-wider uppercase text-primary-500">
             {{ location.state }}
           </span>
           <span class="text-4xl font-bold leading-none text-primary-500 font-display">
@@ -58,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section class="flex items-start py-4 bg-center bg-cover sm:py-10 min-h-content bg-secondary-500" :style="{ backgroundImage: `url(${imageBackgroundInterview})`}">
+    <section class="flex items-start h-full py-4 bg-center bg-cover sm:py-10 lg:min-h-content bg-secondary-500" :style="{ backgroundImage: `url(${imageBackgroundInterview})`}">
       <div
         class="px-2 mx-auto sm:px-7 xl:px-0 max-w-7xl"
         :class="{'grid grid-cols-1 gap-y-6 gap-x-2 lg:grid-cols-2 2xl:grid-cols-3': location.interviews.length > 1}"

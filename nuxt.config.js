@@ -1,7 +1,10 @@
 export default {
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'voces',
+    bodyAttrs: {
+      class: 'antialiased overflow-y-auto font-body overflow-x-hidden noise'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

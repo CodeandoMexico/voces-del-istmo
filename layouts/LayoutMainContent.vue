@@ -1,13 +1,9 @@
 <template>
-  <div class="w-full h-full overflow-hidden noise font-body">
-    <transition name="fade">
-      <div id="main-body" class="flex flex-col h-full min-h-screen overflow-y-auto">
-        <InnerMenu />
-        <main class="main-content">
-          <Nuxt />
-        </main>
-      </div>
-    </transition>
+  <div class="flex flex-col w-full h-full">
+    <InnerMenu />
+    <main class="relative overflow-y-auto min-h-content">
+      <nuxt />
+    </main>
   </div>
 </template>
 
