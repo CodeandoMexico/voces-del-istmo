@@ -92,6 +92,6 @@ export default {
 </script>
 <style>
 .inner-item {
-  @apply flex items-center justify-center text-white hover:text-secondary-500 font-display hover:bg-bg-opacity;
+  @apply flex items-center justify-center text-white text-3xl hover:text-secondary-500 font-display hover:bg-bg-opacity;
 }
 </style>

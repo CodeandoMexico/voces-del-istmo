@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-content">
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 px-10 my-20 text-left xl:my-10">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Introducción
         </h1>
@@ -20,7 +20,7 @@
         <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/2.jpg')})`}" />
       </div>
-      <div class="flex flex-col justify-center col-span-1 p-10 text-left">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           PDIT
         </h1>
@@ -32,7 +32,7 @@
       </div>
     </section>
     <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:min-h-content lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 p-10 text-left">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Voces del Istmo
         </h1>
@@ -53,7 +53,7 @@
         <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/3.jpg')})`}" />
         <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/3.jpg')})`}" />
       </div>
-      <div class="flex flex-col justify-center col-span-1 p-10 text-left">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-white font-display">
           Explora las sedes
         </h1>
@@ -97,12 +97,12 @@ export default {
         {
           state: 'Oaxaca',
           city: 'Santa María Chimalapa',
-          url: '/ubicaciones/santa-maria-chimilpa'
+          url: '/ubicaciones/santa-maria-chimalapa'
         },
         {
           state: 'Oaxaca',
           city: 'Salina Cruz',
-          url: '/ubicaciones/salinas-cruz'
+          url: '/ubicaciones/salina-cruz'
         },
         {
           state: 'Veracruz',

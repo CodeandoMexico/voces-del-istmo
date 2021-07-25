@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-content">
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 px-10 my-20 text-left xl:my-10">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Lecciones aprendidas
         </h1>
@@ -48,7 +48,7 @@
       </div>
     </section>
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 px-10 my-10 text-left">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Oportunidades
         </h1>
@@ -58,7 +58,7 @@
           <p>Atender, de manera directa, la difusión y divulgación masiva del ejercicio de consulta y las experiencias locales permitiría romper supuestos negativos que las personas tienen del proceso, y dejar que todas y todos los residentes y habitantes de la región puedan expresarse, hacer escuchar su voz y que se logre visibilizar la enorme diversidad que da sentido a esta región.</p>
         </article>
       </div>
-      <div class="flex flex-col justify-center col-span-1 px-10 my-10 text-left">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <small class="block w-full">
           <h3 class="mb-2 font-bold tracking-wider uppercase">Fortalecer mecanismos de seguimiento, continuidad y reciprocidad para con las comunidades.</h3><br>
           <h3 class="mb-2 font-bold tracking-wider uppercase">Promover la coordinación inter e intra gubernamental en el marco del proyecto de Desarrollo.</h3><br>

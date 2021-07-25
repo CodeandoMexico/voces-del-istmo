@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-content">
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 px-10 my-20 text-left xl:my-10">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Ciclos de aprendizaje
         </h1>
@@ -25,7 +25,7 @@
       </div>
     </section>
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 px-10 my-20 text-left xl:my-10">
+      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Estrategia
         </h1>
