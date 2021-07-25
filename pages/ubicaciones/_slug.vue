@@ -46,15 +46,20 @@
           <div v-html="location.intro" />
         </article>
       </div>
-      <div class="flex items-center col-span-1">
-        <div class="flex flex-col">
-          <h3 class="mb-2 font-bold tracking-wider uppercase">
-            Reporte
-          </h3>
-          <div v-for="(video, index) in location.videos" :key="index" class="mb-2 ">
-            <small class="block w-full">Para conocer más, descarga el reporte completo:</small>
-            <button>Descargar</button>
-          </div>
+      <div class="flex flex-col items-start justify-center col-span-1 p-6 space-y-4 text-left sm:p-10">
+        <span class="font-bold tracking-wider uppercase">
+          Reporte
+        </span>
+        <div class="flex flex-col items-start space-y-1 text-primary-500">
+          <p class="block w-full font-medium">
+            Para conocer más, descarga el reporte completo:
+          </p>
+          <a href="https://www.mx.undp.org/content/mexico/es/home/library/hiv_aids/voces-del-istmo.html" target="_blank" class="flex items-center px-4 py-2 font-semibold text-white rounded bg-primary-500 button">
+            Descargar
+            <svg class="w-6 h-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -123,6 +128,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
