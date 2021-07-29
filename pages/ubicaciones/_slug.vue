@@ -98,6 +98,7 @@
 
 <script>
 import backgroundInterview from '@/assets/img/bg-entrevista.svg'
+import getSiteMeta from '~/helpers/getSiteMeta'
 export default {
   name: 'UbicacionesSlug',
   layout: 'LayoutMainContent',
@@ -121,9 +122,33 @@ export default {
       imageBackgroundInterview: backgroundInterview
     }
   },
+  head () {
+    return {
+      title: this.location.name,
+      meta: [
+        ...this.meta
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.$config.baseUrl}/ubicaciones/${this.$route.params.slug}`
+        }
+      ]
+    }
+  },
   computed: {
     bgImage () {
       return require(`@/assets/img/${this.location.image}`)
+    },
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: this.location.name,
+        description: this.location.description,
+        url: `${this.$config.baseUrl}/ubicaciones/${this.$route.params.slug}`
+      }
+      return getSiteMeta(metaData)
     }
   }
 }

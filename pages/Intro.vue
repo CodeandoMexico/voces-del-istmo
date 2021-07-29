@@ -83,6 +83,7 @@
 </template>
 
 <script>
+import getSiteMeta from '../helpers/getSiteMeta'
 export default {
   name: 'Intro',
   layout: 'LayoutMainContent',
@@ -125,6 +126,37 @@ export default {
           url: '/ubicaciones/sayula-de-aleman'
         }
       ]
+    }
+  },
+  head () {
+    return {
+      title: 'Introducción',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Introducción a Voces del Istmo'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'vocesdelistmo.org/intro'
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Introducción',
+        description: 'Introducción a Voces del Istmo',
+        url: 'vocesdelistmo.org/intro'
+      }
+      return getSiteMeta(metaData)
     }
   }
 }

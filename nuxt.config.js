@@ -1,11 +1,23 @@
+import getSiteMeta from './helpers/getSiteMeta'
+const meta = getSiteMeta()
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  server: {
+    port: 8000,
+    host: '0.0.0.0'
+  },
   head: {
-    title: 'voces',
+    title: 'Inicio',
+    titleTemplate: 'Voces del Istmo | %s',
+    htmlAttrs: {
+      lang: 'es-MX'
+    },
     bodyAttrs: {
       class: 'antialiased overflow-y-auto font-body overflow-x-hidden noise'
     },
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
@@ -48,6 +60,10 @@ export default {
     'nuxt-fullpage.js',
     '@nuxt/content'
   ],
+
+  publicRuntimeConfig: {
+    baseUrl: process.env.BASE_URL
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
