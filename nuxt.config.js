@@ -3,10 +3,6 @@ const meta = getSiteMeta()
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  server: {
-    port: process.env.SITE_PORT || 8000,
-    host: process.env.SITE_HOST || '0.0.0.0'
-  },
   head: {
     title: 'Inicio',
     titleTemplate: 'Voces del Istmo | %s',
