@@ -9,7 +9,7 @@
           <p>Los Laboratorios de Aceleración son parte de un nuevo esfuerzo global de PNUD para inyectar innovación a los esfuerzos que realizan la organización y aliados para alcanzar los Objetivos de Desarrollo Sostenible. Son 92 laboratorios que atienden a 116 países y México es uno de ellos. Cada laboratorio trabaja para incorporar nuevas habilidades y enfoques orientados hacia la innovación social y el diseño centrado en las personas, para atender con mayor efectividad problemas complejos y aprender, de forma acelerada y en red, a resolver retos del desarrollo global.</p>
           <p>El método del Laboratorio consiste en cuatro fases:</p>
           <ol>
-            <li><b>PRECIBIR</b> y hacer sentido de los retos de desarrollo que tienen las personas en sus comunidades.</li>
+            <li><b>PERCIBIR</b> y hacer sentido de los retos de desarrollo que tienen las personas en sus comunidades.</li>
             <li><b>EXPLORAR</b>. Entender mejor los retos desde la perspectiva de quienes los enfrentan y proponer soluciones que se construyan a partir de los cambios que las personas están dispuestas a hacer o que ya hacen.</li>
             <li><b>PROBAR</b> distintas soluciones de forma experimental, privilegiando la construcción de evidencia y abrazando el fracaso para generar un ambiente donde florezca el aprendizaje sobre lo que realmente funciona, antes de comprometer grandes sumas de recursos.</li>
             <li><b>CRECER</b> involucra incorporar lo aprendido en los sistemas que se busca afectar.</li>
