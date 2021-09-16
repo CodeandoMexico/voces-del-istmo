@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-content">
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
+      <div class="flex flex-col justify-center col-span-1 p-8 text-left sm:px-20 sm:py-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           El Laboratorio de Aceleración
         </h1>
@@ -23,7 +23,7 @@
       </div>
     </section>
     <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
-      <div class="flex flex-col justify-center col-span-1 p-6 text-left sm:p-10">
+      <div class="flex flex-col justify-center col-span-1 p-8 text-left sm:px-20 sm:py-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Agradecimientos
         </h1>
@@ -32,7 +32,7 @@
           <p>También a las y los funcionarios del gobierno federal, de los gobiernos estatales de Oaxaca y Veracruz, y las autoridades municipales del Istmo que participaron en la serie de asambleas que conformaron la Segunda Reunión de Seguimiento y Verificación de Acuerdos de la Consulta Libre, Previa e Informada a Los Pueblos y Comunidades Indígenas del Istmo de Tehuantepec para la creación del “Programa para el Desarrollo del Istmo de Tehuantepec”. Por último, pero no menos importante, a todas las personas del Istmo que acudieron al llamado de sus autoridades para que sucediera este encuentro. A quienes salieron de sus casas y dejaron de lado sus labores para participar y hacer valer su voz, y a quienes tuvieron que desplazarse por varias horas desde de sus lugares de residencia para escuchar y exponer sus demandas. En particular gracias a las personas que, generosamente, nos dedicaron tiempo para participar en las entrevistas.</p>
         </article>
       </div>
-      <div class="flex flex-col justify-center col-span-1 p-6 text-left xl:-mt-6 2xl:-mt-0 sm:p-10">
+      <div class="flex flex-col justify-center col-span-1 p-8 text-left xl:-mt-6 2xl:-mt-0 sm:px-20 sm:py-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Acerca del proyecto
         </h1>
