@@ -44,8 +44,8 @@
         </article>
       </div>
       <div class="col-span-1">
-        <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/4.png')})`}" />
-        <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/4.png')})`}" />
+        <div class="hidden w-full h-full bg-cover lg:block" style="clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);" :style="{'background-image': `url(${require('@/assets/img/4.jpg')})`}" />
+        <div class="block w-full bg-cover h-80 lg:hidden" :style="{'background-image': `url(${require('@/assets/img/4.jpg')})`}" />
       </div>
     </section>
     <section class="grid w-full h-auto grid-cols-1 overflow-hidden lg:min-h-content lg:grid-cols-2 lg:gap-2 bg-primary-500">
