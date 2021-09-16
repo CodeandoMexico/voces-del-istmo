@@ -14,8 +14,46 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Documental',
-  layout: 'LayoutMainContent'
+  layout: 'LayoutMainContent',
+  data () {
+    return {
+      currentPath: `${this.$config.baseUrl}/documental`
+    }
+  },
+  head () {
+    return {
+      title: 'Documental',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Documental sobre Voces del Istmo'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.currentPath
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Documental',
+        description: 'Documental sobre Voces del Istmo',
+        url: this.currentPath
+      }
+      return getSiteMeta(metaData)
+    }
+  }
 }
 </script>

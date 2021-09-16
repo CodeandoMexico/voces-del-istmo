@@ -48,8 +48,46 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Metodologia',
-  layout: 'LayoutMainContent'
+  layout: 'LayoutMainContent',
+  data () {
+    return {
+      currentPath: `${this.$config.baseUrl}/metodologia`
+    }
+  },
+  head () {
+    return {
+      title: 'Metodología',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Metodología en Voces del Istmo'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.currentPath
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Metodología',
+        description: 'Metodología en Voces del Istmo',
+        url: this.currentPath
+      }
+      return getSiteMeta(metaData)
+    }
+  }
 }
 </script>

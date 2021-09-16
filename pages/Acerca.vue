@@ -47,8 +47,46 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Acerca',
-  layout: 'LayoutMainContent'
+  layout: 'LayoutMainContent',
+  data () {
+    return {
+      currentPath: `${this.$config.baseUrl}/acerca`
+    }
+  },
+  head () {
+    return {
+      title: 'Acerca',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Acerca de Voces del Istmo'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.currentPath
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Acerca',
+        description: 'Acerca de Voces del Istmo',
+        url: this.currentPath
+      }
+      return getSiteMeta(metaData)
+    }
+  }
 }
 </script>

@@ -8,7 +8,7 @@
         Elige uno de los puntos de consulta para conocer más:
       </p>
     </div>
-    <div class="relative flex items-center justify-center w-full overflow-hidden transform scale-50 max-w-7xl lg:scale-100" style="width: 1000px;height: 600px;">
+    <div class="relative flex items-center justify-center w-full overflow-hidden transform scale-50 sm:scale-75 md:scale-90 max-w-7xl lg:scale-100" style="width: 1000px;height: 600px;">
       <nav class="absolute inset-0">
         <a class="location" href="/ubicaciones/sayula-de-aleman" style="top: 35%;left: 27%;">
           <span class="name">Sayula de Alemán</span>
@@ -53,9 +53,45 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
 export default {
   name: 'Mapa',
-  layout: 'LayoutMainContent'
+  layout: 'LayoutMainContent',
+  data () {
+    return {
+      currentPath: `${this.$config.baseUrl}/mapa`
+    }
+  },
+  head () {
+    return {
+      title: 'Mapa',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Puntos de consulta'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.currentPath
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        title: 'Mapa',
+        description: 'Puntos de consulta',
+        href: this.currentPath
+      }
+      return getSiteMeta(metaData)
+    }
+  }
 }
 </script>
 

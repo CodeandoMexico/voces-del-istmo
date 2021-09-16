@@ -70,8 +70,46 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Conclusiones',
-  layout: 'LayoutMainContent'
+  layout: 'LayoutMainContent',
+  data () {
+    return {
+      currentPath: `${this.$config.baseUrl}/conclusiones`
+    }
+  },
+  head () {
+    return {
+      title: 'Conclusiones',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.currentPath
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'vocesdelistmo.org/conclusiones'
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Conclusiones',
+        description: this.currentPath,
+        url: 'vocesdelistmo.org/conclusiones'
+      }
+      return getSiteMeta(metaData)
+    }
+  }
 }
 </script>

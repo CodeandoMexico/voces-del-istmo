@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Entrevistas',
   layout: 'LayoutMainContent',
@@ -24,8 +26,40 @@ export default {
   },
   data () {
     return {
+      currentPath: `${this.$config.baseUrl}/entrevistas`,
       isModalOpen: false,
       selectedInterview: {}
+    }
+  },
+  head () {
+    return {
+      title: 'Entrevistas',
+      meta: [
+        ...this.meta,
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Explorando los significados de la Consulta Indígena'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.currentPath
+        }
+      ]
+    }
+  },
+  computed: {
+    meta () {
+      const metaData = {
+        type: 'article',
+        title: 'Entrevistas',
+        description: 'Explorando los significados de la Consulta Indígena',
+        url: this.currentPath
+      }
+      return getSiteMeta(metaData)
     }
   },
   methods: {

@@ -83,12 +83,14 @@
 </template>
 
 <script>
-import getSiteMeta from '../helpers/getSiteMeta'
+import getSiteMeta from '~/helpers/getSiteMeta'
+
 export default {
   name: 'Intro',
   layout: 'LayoutMainContent',
   data () {
     return {
+      currentPath: `${this.$config.baseUrl}/intro`,
       locations: [
         {
           state: 'Oaxaca',
@@ -143,7 +145,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: 'vocesdelistmo.org/intro'
+          href: this.currentPath
         }
       ]
     }
@@ -154,7 +156,7 @@ export default {
         type: 'article',
         title: 'Introducción',
         description: 'Introducción a Voces del Istmo',
-        url: 'vocesdelistmo.org/intro'
+        url: this.currentPath
       }
       return getSiteMeta(metaData)
     }
