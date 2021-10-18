@@ -43,6 +43,13 @@
         </article>
       </div>
     </section>
+      <div style="text-align: center;">
+        <br>
+        <p><b>VOCES DEL ISTMO ¿Qué significa la Consulta Indígena del Istmo de Tehuantepec para las personas que participan en ella?</b></p>
+        <p>Derechos Reservados © 2021 - Programa de las Naciones Unidas para el Desarrollo (PNUD)</p>
+        <p>Montes Urales 440 Col. Lomas de Chapultepec, Alcaldía Miguel Hidalgo. C.P.11000, Ciudad de México.</p>
+        <br>
+      </div>
   </div>
 </template>
 
