@@ -22,7 +22,7 @@
         </div>
       </div>
     </section>
-    <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden border-b lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
+    <section class="grid flex-shrink-0 w-full h-auto grid-cols-1 overflow-hidden lg:min-h-content border-primary-200 lg:grid-cols-2 lg:gap-2">
       <div class="flex flex-col justify-center col-span-1 p-8 text-left sm:px-20 sm:py-10">
         <h1 class="mb-4 text-4xl font-bold leading-none text-primary-500 font-display">
           Agradecimientos
@@ -43,13 +43,17 @@
         </article>
       </div>
     </section>
-      <div style="text-align: center;">
-        <br>
-        <p><b>VOCES DEL ISTMO ¿Qué significa la Consulta Indígena del Istmo de Tehuantepec para las personas que participan en ella?</b></p>
-        <p>Derechos Reservados © 2021 - Programa de las Naciones Unidas para el Desarrollo (PNUD)</p>
-        <p>Montes Urales 440 Col. Lomas de Chapultepec, Alcaldía Miguel Hidalgo. C.P.11000, Ciudad de México.</p>
-        <br>
-      </div>
+    <footer class="flex flex-col items-center p-4 space-y-1 text-base text-center border-t text-primary-500">
+      <p class="font-semibold ">
+        VOCES DEL ISTMO ¿Qué significa la Consulta Indígena del Istmo de Tehuantepec para las personas que participan en ella?</b>
+      </p>
+      <p>
+        Derechos Reservados © 2021 - Programa de las Naciones Unidas para el Desarrollo (PNUD)
+      </p>
+      <p>
+        Montes Urales 440 Col. Lomas de Chapultepec, Alcaldía Miguel Hidalgo. C.P.11000, Ciudad de México.
+      </p>
+    </footer>
   </div>
 </template>
 

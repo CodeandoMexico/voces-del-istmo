@@ -1,4 +1,6 @@
+import redirectSSL from 'redirect-ssl'
 import getSiteMeta from './helpers/getSiteMeta'
+
 const meta = getSiteMeta()
 
 export default {
@@ -45,10 +47,16 @@ export default {
     '@nuxtjs/eslint-module'
   ],
 
+  serverMiddleware: [
+    redirectSSL.create({
+      enabled: process.env.NODE_ENV === 'production'
+    })
+  ],
+
   tailwindcss: {
     configPath: '~/config/tailwind.config.js',
     cssPath: '~/assets/scss/main.scss',
-    jit: true
+    mode: 'jit'
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)

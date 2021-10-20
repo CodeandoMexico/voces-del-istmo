@@ -19,7 +19,8 @@
     "fullpage.js": "^3.0.9",
     "nuxt": "^2.15.3",
     "nuxt-fullpage.js": "^0.0.3",
-    "postcss": "^8.3.0"
+    "postcss": "^8.3.0",
+    "redirect-ssl": "^3.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
